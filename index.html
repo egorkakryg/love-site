@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Для Ариши ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+<!-- СТАРТ -->
+<div id="start">
+  <h1>Ариша ❤️</h1>
+  <p>Я сделал кое-что… только для тебя</p>
+  <button onclick="showLove()">Начать</button>
+</div>
+
+<!-- ПРИЧИНЫ -->
+<div id="love" class="hidden">
+  <h2>Почему я тебя люблю 💖</h2>
+
+  <div class="card" onclick="reveal(this)">
+    💞 Твоя нежность
+    <span>Ты умеешь делать даже обычные моменты особенными</span>
+  </div>
+
+  <div class="card" onclick="reveal(this)">
+    😂 Твой юмор
+    <span>С тобой невозможно быть грустным, даже если очень стараться</span>
+  </div>
+
+  <div class="card" onclick="reveal(this)">
+    🫶 Твоё сердце
+    <span>Ты реально один из самых добрых людей, которых я встречал</span>
+  </div>
+
+  <div class="card" onclick="reveal(this)">
+    ✨ Твоя атмосфера
+    <span>С тобой спокойно, тепло и по-настоящему</span>
+  </div>
+
+  <div class="card" onclick="reveal(this)">
+    🔥 И немного искры
+    <span>Ну и да… ты иногда сводишь меня с ума 😏</span>
+  </div>
+
+  <button onclick="startGame()">Дальше →</button>
+</div>
+
+<!-- ИГРА -->
+<div id="game" class="hidden">
+  <h2>Мини-игра для тебя 🎮</h2>
+  <p>Найди все пары — и откроется сюрприз</p>
+
+  <div id="grid"></div>
+</div>
+
+<!-- ФОТО -->
+<div id="photos" class="hidden">
+  <h2>Наши воспоминания 📸</h2>
+
+  <div class="gallery">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+    <img src="photo4.jpg">
+    <img src="photo5.jpg">
+    <img src="photo6.jpg">
+    <img src="photo7.jpg">
+    <img src="photo8.jpg">
+  </div>
+
+  <h3 class="final-text">
+    Я не знаю, как это объяснить красиво…  
+    но с тобой всё ощущается правильно ❤️
+  </h3>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
