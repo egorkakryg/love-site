@@ -5,6 +5,7 @@ body {
   text-align: center;
 }
 
+/* центр */
 .container {
   width: 100%;
   max-width: 400px;
@@ -12,10 +13,12 @@ body {
   margin: 80px auto;
 }
 
+/* заголовок */
 h1 {
   font-size: 40px;
 }
 
+/* кнопка */
 button {
   padding: 14px 28px;
   background: linear-gradient(45deg, hotpink, deeppink);
@@ -27,49 +30,52 @@ button {
   box-shadow: 0 5px 15px rgba(255,0,100,0.3);
 }
 
-/* КАРТОЧКИ (НОРМАЛЬНЫЕ) */
+/* карточки */
 .card {
   background: white;
   margin: 15px auto;
-  padding: 15px;
+  padding: 18px;
   border-radius: 14px;
   width: 260px;
   cursor: pointer;
   transition: 0.3s;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .card:hover {
   transform: scale(1.03);
 }
 
-/* СЕРДЦЕ СЛЕВА */
-.heart {
-  font-size: 22px;
-  flex-shrink: 0;
-}
-
-/* ТЕКСТ */
-.text {
-  text-align: left;
-}
-
-/* СКРЫТЫЙ ТЕКСТ */
+/* скрытый текст */
 .hidden-text {
   display: none;
   color: gray;
   margin-top: 5px;
 }
 
-/* СКРЫТИЕ БЛОКОВ */
+/* сердце */
+.heart {
+  font-size: 22px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+/* layout карточки */
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  text-align: left;
+}
+
+/* скрытие блоков */
 .hidden {
   display: none;
 }
 
-/* ИГРА */
+/* игра */
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 80px);
@@ -90,7 +96,7 @@ button {
   cursor: pointer;
 }
 
-/* ГАЛЕРЕЯ */
+/* галерея */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -107,7 +113,7 @@ button {
   font-size: 18px;
 }
 
-/* ЛЕТАЮЩИЕ СЕРДЦА */
+/* падающие сердечки */
 #hearts span {
   position: fixed;
   font-size: 20px;
