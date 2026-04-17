@@ -4,8 +4,11 @@ function showLove() {
 }
 
 function reveal(el) {
-  let span = el.querySelector("span");
-  span.style.display = "block";
+  let text = el.querySelector(".hidden-text");
+  let heart = el.querySelector(".heart");
+
+  text.style.display = "block";
+  heart.innerText = "💖";
 }
 
 /* 🎮 игра */
