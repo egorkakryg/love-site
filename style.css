@@ -5,7 +5,6 @@ body {
 
   display: flex;
   justify-content: center;   /* центр по горизонтали */
-  align-items: center;       /* центр по вертикали */
   min-height: 100vh;
 
   text-align: center;
