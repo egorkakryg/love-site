@@ -16,8 +16,8 @@ function reveal(el) {
   }
 }
 
-/* 🎮 игра */
-const emojis = ["💖","💖","🎀","🎀","🧸","🧸","💘","💘"];
+/* игра */
+const emojis = ["💖","💖","🌸","🌸","✨","✨","🔥","🔥","😍","😍","💘","💘","🥰","🥰","💋","💋"];
 
 function startGame() {
   document.getElementById("love").classList.add("hidden");
@@ -65,24 +65,25 @@ function clickCell() {
 
 function checkWin() {
   let cells = document.querySelectorAll(".cell");
-  let done = [...cells].every(c => c.innerText !== "?");
+  let allOpen = [...cells].every(c => c.innerText !== "?");
 
-  if (done) {
+  if (allOpen) {
     setTimeout(() => {
       document.getElementById("game").classList.add("hidden");
       document.getElementById("photos").classList.remove("hidden");
-    }, 600);
+    }, 500);
   }
 }
 
-/* 💖 сердечки */
-setInterval(() => {
+/* падающие сердечки */
+function createHeart() {
   let heart = document.createElement("span");
   heart.innerText = "💖";
   heart.style.left = Math.random() * 100 + "vw";
-  heart.style.animationDuration = (3 + Math.random()*3) + "s";
-
+  heart.style.animationDuration = (3 + Math.random() * 5) + "s";
   document.getElementById("hearts").appendChild(heart);
 
-  setTimeout(() => heart.remove(), 6000);
-}, 300);
+  setTimeout(() => heart.remove(), 8000);
+}
+
+setInterval(createHeart, 300);
