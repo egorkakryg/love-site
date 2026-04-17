@@ -128,3 +128,13 @@ button {
   justify-content: center; /* центр по вертикали */
   align-items: center;     /* центр по горизонтали */
 }
+.heart {
+  font-size: 22px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
