@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: Arial;
@@ -119,4 +120,11 @@ button {
   display: none;
   color: gray;
   margin-top: 5px;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* центр по вертикали */
+  align-items: center;     /* центр по горизонтали */
 }
