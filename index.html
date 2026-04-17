@@ -13,39 +13,58 @@
 <div class="container">
 
 <!-- СТАРТ -->
-<div id="start">
-  <h1>Ариша ❤️</h1>
-  <p>Я сделал кое-что… только для тебя</p>
-  <button onclick="showLove()">Начать</button>
-</div>
-
-<!-- ПРИЧИНЫ -->
 <div id="love" class="hidden">
   <h2>Почему я тебя люблю 💖</h2>
+  <p style="color: gray; margin-bottom: 20px;">(нажимай на таблички)</p>
 
   <div class="card" onclick="reveal(this)">
-    💞 Твоя нежность
-    <span>Ты умеешь делать даже обычные моменты особенными</span>
+    <div class="card-content">
+      <span class="heart">🤍</span>
+      <div class="text">
+        Твоя нежность
+        <div class="hidden-text">Ты умеешь делать даже обычные моменты особенными</div>
+      </div>
+    </div>
   </div>
 
   <div class="card" onclick="reveal(this)">
-    😂 Твой юмор
-    <span>С тобой невозможно быть грустным, даже если очень стараться</span>
+    <div class="card-content">
+      <span class="heart">🤍</span>
+      <div class="text">
+        Твой юмор
+        <div class="hidden-text">С тобой невозможно быть грустным, даже если очень стараться</div>
+      </div>
+    </div>
   </div>
 
   <div class="card" onclick="reveal(this)">
-    🫶 Твоё сердце
-    <span>Ты реально один из самых добрых людей, которых я встречал</span>
+    <div class="card-content">
+      <span class="heart">🤍</span>
+      <div class="text">
+        Твоё сердце
+        <div class="hidden-text">Ты реально один из самых добрых людей, которых я встречал</div>
+      </div>
+    </div>
   </div>
 
   <div class="card" onclick="reveal(this)">
-    ✨ Твоя атмосфера
-    <span>С тобой спокойно, тепло и по-настоящему</span>
+    <div class="card-content">
+      <span class="heart">🤍</span>
+      <div class="text">
+        Твоя атмосфера
+        <div class="hidden-text">С тобой спокойно, тепло и по-настоящему</div>
+      </div>
+    </div>
   </div>
 
   <div class="card" onclick="reveal(this)">
-    🔥 И немного искры
-    <span>Ну и да… ты иногда сводишь меня с ума 😏</span>
+    <div class="card-content">
+      <span class="heart">🤍</span>
+      <div class="text">
+        И немного искры
+        <div class="hidden-text">Ну и да… ты иногда сводишь меня с ума 😏</div>
+      </div>
+    </div>
   </div>
 
   <button onclick="startGame()">Дальше →</button>
