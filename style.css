@@ -104,3 +104,23 @@ button {
   0% { transform: translateY(-10px); }
   100% { transform: translateY(100vh); }
 }
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.text {
+  text-align: left;
+}
+
+.hidden-text {
+  display: none;
+  color: gray;
+  margin-top: 5px;
+}
