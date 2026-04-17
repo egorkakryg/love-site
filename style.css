@@ -1,13 +1,20 @@
 body {
   margin: 0;
   font-family: Arial;
-  text-align: center;
   background: linear-gradient(#fff0f5, #ffe4ec);
-  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;   /* центр по горизонтали */
+  align-items: center;       /* центр по вертикали */
+  min-height: 100vh;
+
+  text-align: center;
 }
 
 .container {
-  padding: 40px 20px;
+  width: 100%;
+  max-width: 400px;  /* ограничение ширины (чтобы красиво на телефоне) */
+  padding: 20px;
 }
 
 h1 {
