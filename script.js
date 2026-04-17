@@ -7,8 +7,13 @@ function reveal(el) {
   let text = el.querySelector(".hidden-text");
   let heart = el.querySelector(".heart");
 
-  text.style.display = "block";
-  heart.innerText = "💖";
+  if (text.style.display === "block") {
+    text.style.display = "none";
+    heart.innerText = "🤍";
+  } else {
+    text.style.display = "block";
+    heart.innerText = "💖";
+  }
 }
 
 /* 🎮 игра */
