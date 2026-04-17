@@ -107,11 +107,6 @@ button {
   gap: 10px;
 }
 
-.heart {
-  font-size: 20px;
-  transition: 0.3s;
-}
-
 .text {
   text-align: left;
 }
@@ -122,19 +117,14 @@ button {
   margin-top: 5px;
 }
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* центр по вертикали */
-  align-items: center;     /* центр по горизонтали */
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 80px auto;
+}/* центр по горизонтали */
 }
 .heart {
   font-size: 22px;
   margin-right: 10px;
   transition: 0.3s;
-}
-
-.card-content {
-  display: flex;
-  align-items: center;
 }
